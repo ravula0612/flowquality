@@ -1,0 +1,3 @@
+include VALIDATION.md
+recursive-include examples *.py *.json
+recursive-include tests *.py

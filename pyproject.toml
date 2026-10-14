@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flowquality"
+version = "0.1.0"
+description = "Small, explicit data quality checks for batch PySpark DataFrames"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Anil Kumar Ravula"}]
+dependencies = []
+
+[project.optional-dependencies]
+spark = ["pyspark>=3.5,<4"]
+dev = ["pytest>=8", "build>=1"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
