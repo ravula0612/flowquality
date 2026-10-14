@@ -1,0 +1,6 @@
+[
+  {"name": "awb_required", "kind": "not_null", "columns": ["awb"]},
+  {"name": "awb_unique", "kind": "unique", "columns": ["awb"]},
+  {"name": "weight_nonnegative", "kind": "range", "columns": ["weight_kg"], "minimum": 0},
+  {"name": "nonempty", "kind": "row_count", "minimum": 1}
+]
